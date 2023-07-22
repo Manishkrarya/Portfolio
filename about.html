@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>About Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body class="about">
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="">
+        <div class="content-switcher">
+            <h4>STYLE SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img
+                            src="img/styleswitcher/purple.png" alt="purple" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img
+                            src="img/styleswitcher/red.png" alt="red" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img
+                            src="img/styleswitcher/blueviolet.png" alt="blueviolet" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img
+                            src="img/styleswitcher/blue.png" alt="blue" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img
+                            src="img/styleswitcher/goldenrod.png" alt="goldenrod" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img
+                            src="img/styleswitcher/magenta.png" alt="magenta" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img
+                            src="img/styleswitcher/yellowgreen.png" alt="yellowgreen" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img
+                            src="img/styleswitcher/orange.png" alt="orange" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img
+                            src="img/styleswitcher/green.png" alt="green" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img
+                            src="img/styleswitcher/yellow.png" alt="yellow" /></a>
+                </li>
+            </ul>
+
+            <div id="hideSwitcher">&times;</div>
+        </div>
+
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Header Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+            <li class="icon-box">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box active">
+                <i class="fa fa-user"></i>
+                <a href="about.html">
+                    <h2>About</h2>
+                </a>
+            </li>
+
+
+            <li class="icon-box">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+
+        </ul>
+        <!-- Fixed Navigation Ends -->
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="list-unstyled" id="menu">
+                    <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li class="active"><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+
+
+                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+    <!-- Page Title Starts -->
+    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+        <h1>ABOUT <span>ME</span></h1>
+        <span class="title-bg">Resume</span>
+    </section>
+    <!-- Page Title Ends -->
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+        <div class="container">
+            <div class="row m-0 p-0">
+                <!-- Personal Info Starts -->
+                <div class=" col-sm-12 col-lg-6 ">
+                    <img src="../dark/img/WhatsApp Image 2023-03-12 at 23.46.35 (2).jpeg" alt=""
+                        style="height: 100%;width: 100%;" />
+                </div>
+
+                <div class=" col-sm-12 col-lg-6 d-flex flex-column justify-content-between ">
+                    <div>
+                        <p class="open-sans-font">
+
+                            Hi! My name is <span style="color: #ffb400;"> Belal Ahmad</span>. I am a Web
+                            Developer, and I'm very
+                            passionate
+                            and
+                            dedicated to my work. With experience
+                            as a professional Web developer, I have acquired the skills and knowledge necessary
+                            to
+                            make your project a success. I
+                            enjoy every step of the design process, from discussion and collaboration.
+                        </p>
+                        <p>Here are a Few Highlights:</p>
+                        <ul class="about-list  open-sans-font">
+                            <li> <span class=" open-sans-font">
+                                    Full Stack web</span>
+                            </li>
+                            <li> <span class=" open-sans-font">
+                                    Interactive Front End as per the design</span>
+                            </li>
+
+                        </ul>
+                        <p>Extra curricular:</p>
+                        <ul class="about-list  open-sans-font">
+                            <li> <span class=" open-sans-font">
+                                    I Develop own web projects
+                                    outside of work to practice skills
+                                    and demonstrate my creativity.</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class=" text-right mt-2 mb-2">
+                        <a href="about.html" class="btn btn-download">Download CV</a>
+                    </div>
+
+                </div>
+
+                <!-- Personal Info Ends -->
+                <!-- Boxes Starts -->
+
+                <!-- Boxes Ends -->
+            </div>
+            <hr class="separator">
+            <!-- Skills Starts -->
+
+            <!-- Skills Ends -->
+
+            <!-- Experience & Education Starts -->
+
+
+
+            <!-- Experience & Education Ends -->
+        </div>
+    </section>
+    <div class="box-container">
+
+        <div class="row box-container1 m-0 p-0">
+            <section
+                class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+                <h1>Experience <span>Skill</span></h1>
+                <span class="title-bg">Resume</span>
+            </section>
+
+            <div class="col-sm-12 col-md-12 col-lg-6 mt-4 borderboxleft">
+                <div class="resume-box">
+                    <div class="d-flex">
+                        <div style="height: 45px;width: 100px; background-color: aliceblue ;padding: 5px;">
+                            <img src="../dark/img/tech-mahindra-logo-070473E0D4-seeklogo.com.png" alt=""
+                                style="height: 100%;width: 100%;" />
+                        </div>
+                        <div class="mx-2">
+                            <h5 class="m-0 p-0" style="color: red;">Tech Mahindra Pvt Ltd,
+                            </h5>
+                            <p style="font-size: 10px;padding: 0px;">Associate software
+                                engineer</p>
+                            <p style="font-size: 10px;padding: 0px;">Noida Sector 64,Noida</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="padding: 0px; color: #ffb400;font-size: 10px;">31-01- 2023 <span
+                                style="color: aliceblue;">To
+                            </span>13-03-2023</p>
+                        <p>I was currently working here as a Web Developer .i am working in many
+                            project.</p>
+                        <p>Personal Portfolio-(2023)</p>
+                        <ul class="pl-3">
+                            <li class="m-0 p-0"><span style="font-size: 15px; color: antiquewhite;">Technologies
+                                    Used:</span><span style="font-size: 12px;"> Html
+                                    ,css,bootstrap,javaScript</span></li>
+                            <li class="m-0 p-0"><span style="font-size: 15px; color: antiquewhite;">Gole-</span><span
+                                    style="font-size: 12px;">A personal Portfolio
+                                    website to showcase all my details and
+                                    project at one place.</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-sm-12 col-md-12 col-lg-6 mt-4 borderboxright">
+                <div class="resume-box d-flex flex-column  justify-content-between" style="width: 100%;height: 100%;">
+                    <div class="d-flex justify-content-between">
+                        <p style="font-size: 20px;">Html</p>
+                        <p style="font-size: 20px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked">
+                            </span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p style="font-size: 20px;">Css</p>
+                        <p style="font-size: 20px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked">
+                            </span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p style="font-size: 20px;">Bootstrap</p>
+                        <p style="font-size: 20px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked">
+                            </span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p style="font-size: 20px;">JavaScript</p>
+                        <p style="font-size: 20px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked">
+                            </span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                        </p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p style="font-size: 20px;">Core Java</p>
+                        <p style="font-size: 20px;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star ">
+                            </span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star "></span>
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+
+    <div class="box-container">
+
+        <div class="row box-container1 m-0 p-0">
+            <section
+                class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+                <h1>Edu<span>cation</span></h1>
+                <span class="title-bg">Resume</span>
+            </section>
+
+
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="d-flex">
+                    <div style="height: 45px;width: 100px; background-color: aliceblue ;padding: 5px;">
+                        <img src="../dark/img/KIETLogo1_1646198689.png" alt="" style="height: 100%;width: 100%;" />
+                    </div>
+                    <div class="mx-2">
+                        <p class="m-0 p-0" style="color: rgb(213, 213, 255);">Krishna Institute of Engineering and
+                            Technology
+                            (KIET)
+                        </p>
+
+                    </div>
+                </div>
+                <p style="font-size: 12px;padding: 0px;">I’m completed my Graduation B. Tech in Computer Science
+                    And Engineering With 7.12 CGPA</p>
+                <p style="font-size: 10px;padding: 0px;">2019-2022</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="d-flex">
+                    <div style="height: 45px;width: 80px; background-color: aliceblue ;padding: 5px;">
+                        <img src="../dark/img/integralimages.png" alt="" style="height: 100%;width: 100%;" />
+                    </div>
+                    <div class="mx-2">
+                        <p class="m-0 p-0" style="color: rgb(213, 255, 230);">Integral University, Lucknow
+                        </p>
+
+                    </div>
+                </div>
+                <p style="font-size: 12px;padding: 0px;">I’m completed my Diploma in Computer Science And Engineering
+                    With
+                    75 Percentage</p>
+                <p style="font-size: 10px;padding: 0px;">2017-2019</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="d-flex">
+                    <div style="height: 45px;width: 80px; background-color: aliceblue ;padding: 5px;">
+                        <img src="../dark/img/st.jpeg" alt="" style="height: 100%;width: 100%;" />
+                    </div>
+                    <div class="mx-2">
+                        <p class="m-0 p-0" style="color: rgb(248, 225, 152);">St. Mary's Inter College,
+                        </p>
+
+                    </div>
+                </div>
+                <p style="font-size: 12px;padding: 0px;">I’m completed my Intermediate
+                    With
+                    75 Percentage</p>
+                <p style="font-size: 10px;padding: 0px;">2015-2017</p>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <hr class="separator">
+    <!-- Main Content Ends -->
+
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/styleswitcher.js"></script>
+    <script src="js/preloader.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
